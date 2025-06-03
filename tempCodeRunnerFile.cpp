@@ -1,8 +1,10 @@
-class pelajar : virtual public orang {
+class Budi: public pekerja, public pelajar {
     public:
-        pelajar(int pUmur) :
-            orang(pUmur)
+        Budi(int pUmur) :
+            pekerja(pUmur),
+            pelajar(pUmur),
+            orang(pUmur) // dapat dilakukan jika menggunakan virtual function 
         {
-            cout << " Belajar dibuat\n" << endl;
+            cout << " Budi dibuat\n" << endl;
         }
 };
