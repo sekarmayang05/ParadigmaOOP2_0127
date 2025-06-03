@@ -1,7 +1,8 @@
-class baseClass1{
+class pelajar : virtual public orang {
     public:
-    virtual void perkenalan(){
-        cout << "hallo saya function dari base class";
-
-    }
+        pelajar(int pUmur) :
+            orang(pUmur)
+        {
+            cout << " Belajar dibuat\n" << endl;
+        }
 };
