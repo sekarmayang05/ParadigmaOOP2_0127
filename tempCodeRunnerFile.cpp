@@ -1,9 +1,8 @@
-public:
-    void setSaklarNo (int i, string value) {
-        SaklarNo[i] = value;
-    }
-
-    string getSaklarNo(int i) {
-        return SaklarNo[i];
-    }
+class pekerja : virtual public orang {
+    public:
+        pekerja(int pUmur) :
+            orang(pUmur)
+        {
+            cout << " pekerja dibuat\n" << endl;
+        }
 };
